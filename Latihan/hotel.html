@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lier Guys</title>
+</head>
+<body>
+    <script>
+
+            // input
+            var nama = prompt("Nama Pelanggan : ");
+            var lama = prompt("Lama Menginap : ");
+            var jenis = prompt("Pilih Jenis Kamar : ");
+            var status = prompt("Status Pelanggan : ");
+            var tarif = ("");
+            var bayar = ("");
+
+            document.write=("--*-- SISTEM INFORMASI PERHOTELAN --*--");
+
+            document.write=("1. Deluxe Room Rp 275.000/hari");
+            document.write=("2. Suite Room Rp 300.000/hari");
+            document.write=("3. President Room Rp 370.000/hari");
+            document.write=("Jenis kamar yang dipesan : ");
+            document.write=("1. Member");
+            document.write=("2. Non Member");
+
+             // proses perhitungan
+            if (Jenis == 1){
+                Tarif = lama * 275000;
+                Kamar = "Deluxe Room";
+            } else if (Jenis == 2){
+                Tarif = lama * 300000;
+                Kamar = "Suite Room";
+            } else if (jenis == 3){
+                Tarif = lama * 375000;
+                Kamar = "President Room";
+            }
+
+            if (status == 1) {
+                if (lama >= 4 && lama <= 7) {
+                    diskon = 0.20 * tarif;
+                } else if (lama > 7) {
+                    diskon = 0.35 * tarif;
+                }
+            } else if (status == 2) {
+                if (lama >= 4 && lama <= 7) {
+                    diskon = 0.10 - tarif;
+                } else if (lama > 7) {
+                    diskon = 0.15 - tarif;
+                }
+            }
+            bayar = tarif - diskon;
+
+            // nota
+            document.write=("---*--- NOTA PEMBAYARAN HOTEL BANDUNG ---*---");
+            document.write=("Tarif Penginapan : Rp " + tarif );
+            document.write=("Diskon Menginap : Rp " + diskon );
+            document.write=("Nominal yang harus dibayar : Rp " + bayar );
+            document.write=("Bayar : Rp ");
+            if (tarif < bayar) {
+                document.write=("Mohon maaf uang anda kurang");
+            }
+            else {
+                document.write=("Kembalian anda : Rp " + bayar - tarif );
+            }
+            document.write=("=========================================================");
+
+    </script>
+</body>
+</html>

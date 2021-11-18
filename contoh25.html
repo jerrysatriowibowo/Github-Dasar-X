@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anjay</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="stylesheet" href="../jerrysatriowibowo/Css/style3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../jerrysatriowibowo/Css/style2.css">
+    <P><h3><em>Tugas Percobaan Web Untuk Tugas</em></h3></p>
+    <style type="text/css">
+        .wrapper{
+            width: 650px;
+            margin: 0 auto;
+        }
+        .page-header h2{
+            margin-top: 0;
+        }
+        table tr td:last-child a{
+            margin-right: 15px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</head>
+<body>
+  <button class="toggle-sidebar" id="toggle-sidebar">Toggle Sidebar</button>
+    
+  <ul class="sidebar">
+    <li><a href="#">Beranda</a></li>
+    <li><a href="#">Portofolio</a></li>
+    <li><a href="#">Galeri</a></li>
+    <li><a href="#">Tentang</a></li>
+    <li><a href="#">Kontak</a></li>
+    </ul>  
+    
+    <script src="../jerrysatriowibowo/js/code.js"></script>
+
+    <div class="wrapper">
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+        <div class="page-header clearfix">
+            <h2 class="pull-left">Halaman Input Dan Table</h2>
+        </div>
+            <table class='table table-bordered table-striped'>
+        <thead>
+            <div class="form-group">
+                <label for="usr">Nama :</label>
+                <input type="text" class="form-control" id="usr">
+                <div class="form-group">
+                <label for="pwd">Pasword :</label>
+                <input type="password" class="form-control" id="pwd">
+            </div>
+            <tr>
+            <th>Nama Depan</th>
+            <th>Nama Belakang</th>
+            <th>Email</th>
+        </thead>
+        <tbody>
+        <td>Jerry</td>
+        <td>Satrio</td>
+        <td>@example.com</td>
+            <a href='read.php?id=". $row[title='View Record data-toggle=tooltip>
+                <span class='glyphicon glyphicon-eye-open'></span></a>
+            <a href='update.php?id=". $row[title='Update Record data-toggle=tooltip>
+                <span class='glyphicon glyphicon-pencil'></span></a>
+            <a href='delete.php?id=". $row[title='Delete Record data-toggle=tooltip>
+        </tr>          
+        </tbody>
+            </table> 
+            <div class="form-group">
+              <a for="comment">Comment :</a>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>       
+            <p class='lead'>Kirim Pertanyaan Kamu Ke Kolom Di Atas !</p>
+            <a href="create.php" class="btn btn-danger pull-right">Batal</a>
+            <a href="create.php" class="btn btn-primary pull-right">Kirim</a>
+            </div>
+            </main>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+</body>
+</html>

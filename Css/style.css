@@ -1,0 +1,139 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    }
+
+    body  {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Open sans" , sans-serif;   
+      background-color:rgb(32, 196, 196);
+    }
+
+    .wrapper {
+        width: 1100px;
+        margin: auto;
+        position: relative;
+    }
+
+    .logo a {
+        font-size: 50px;
+        font-weight: 800;
+        float: left;
+        font-family: courier;
+        color: white;
+    }
+
+    .menu {
+        float: right;
+    }
+
+    nav {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        line-height: 80px;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        background: rgb(32, 196, 196);
+        z-index: 1;
+        border-bottom: solid black;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        color: black;
+        font-size: bold;
+        text-align: center;
+        padding: 0px 16px 0px 16px;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    section {
+        margin: auto;
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .kolom {
+        margin: 50px;
+        display: 50px;
+    }
+
+    .kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: comic sans-ms;
+    color: #364f6b;
+    }
+
+    h2 {
+        font-family: comic sans ms;
+        font-weight: 800;
+        font-size: 45px;
+        margin-bottom: 20px;
+        color: #364f6b;
+        width: 100%;
+        line-height: 50px;
+    }
+
+
+
+    
+
+    p {
+        margin: 5px 0px 5px 0px;
+        padding: 10px 0px 10px 0px;
+    }
+
+a.tombol-ungu {
+    background: #9D84B7;
+        border-radius: 20px;
+        margin-top: 0px;
+        padding: 15px 20px 15px  20px;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-weight: bold;
+}
+
+a.tombol-ungu:hover {
+    background-color: #720ae0;
+    color: black;
+}
+  footer{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #3f72af;
+    z-index: 1;
+    border-top: solid #500ee9;
+}
+  
+
+  .loga a {
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: courier;
+    color: #3f72af;
+}
